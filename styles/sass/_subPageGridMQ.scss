@@ -1,0 +1,44 @@
+/****************************
+MOBILE AND TABLET BLOG AND CONTACT PAGE GRID
+****************************/
+@media (max-width: 780px) {
+    .subGrid {
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-rows: 35.5vw 10vw 1fr 530px;
+        header {
+            grid-column: 1/4;
+            grid-row: 1/3;
+        }
+        main{
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+        aside {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+    } 
+    .contact header .headerImg, .blog header .headerImg {
+        height: 45.5vw;
+    }
+
+    .blog{
+        aside{
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 100px 100px 280px;
+        }
+        .blogAside {
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+        .blogAsideImg {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        
+    }
+}
+/****************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************/

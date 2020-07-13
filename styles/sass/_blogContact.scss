@@ -1,0 +1,195 @@
+/****************************
+INITIAL BLOG AND CONTACT PAGE STYLE
+****************************/
+
+.blog 
+    header{
+        .headerImg{
+        background-image: url(.././assets/blog-header.jpg);
+        height: 35.5vw;
+        h1{
+            color: $darkGroundCopyC;
+            padding-left: 10vw;
+        }
+    }
+}
+
+.blog {
+    .blogImg {
+        width: 100%;
+        height: 40vw;
+        box-shadow: -15px 15px $highlightC;
+        background-image: url(.././assets/blog-post-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    .blogContent{
+        margin-left: -15px;
+        padding-bottom: 7vw;
+        border-bottom: 5px solid $highlightC;
+        border-left: 5px solid $highlightC;
+        h2 {
+            padding-top: 75px;
+            margin: 0 8vw 23px 8vw;
+        }
+        p {
+            margin: 0 8vw 20px 8vw;
+        }
+    }
+}
+
+
+.commentSec {
+    .postedComments {
+        margin: 5vw 0 0 6vw;
+        h3{
+            color: $accentC;
+            margin-bottom: 30px;
+        }
+        .comment {
+            display: grid;
+            grid-template-columns: 5.5vw 1fr;
+            grid-template-rows: 1fr; 
+            .profileImg{
+                width: 5.5vw;
+                height: 5.5vw;
+                grid-column: 1/2;
+            }
+            .commentContents {
+                grid-column: 2/3;
+                margin: 0 0 30px 30px;
+                span {
+                    color: $accentC;
+                }
+            }
+        }
+    }
+}
+
+.comment:first-of-type {
+    margin-bottom: 4vw;
+}
+
+.blog {
+    aside {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        .blogAsideImg{
+            background-image: url(.././assets/blog-side-image.jpg);
+            height: 26.5vw;
+            max-height: 377px;
+            width: 74%;
+            margin: -660px 0 0 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .blogAside {
+            background-color: $accentC;
+            margin: 8vw 8vw 0 6vw;
+            height: 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            h4, p, ul {
+                padding: 0 20px 0 20px;
+            }
+            p{
+                padding: 20px 20px;
+            }
+            p, li {
+                color: $darkGroundCopyC;
+            }
+            ul {
+                padding: 20px 35px;
+            }
+            li {
+                line-height: 2rem;
+            }      
+        }
+    }
+} 
+
+.olderPosts {
+    list-style: disc;
+}
+
+/****** CONTACT PAGE ******************/
+
+.contact {
+    header {
+        .headerImg{
+        background-image: url(.././assets/contact-header.jpg);
+        height: 35.5vw;
+            h1{
+                color: $darkGroundCopyC;
+                padding-left: 10vw;
+            }
+        }
+    }
+}
+
+.contact {
+    main {
+        height: 425px;
+        width: 92.5%;
+        background-color: $accentC;
+        box-shadow: 15px 15px $highlightC;
+        margin-bottom: 8.5vw;
+}
+}
+
+.contactFormContainer{
+    margin: 4vw;
+    
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    input {
+        background-color: $accentC;
+        border: none;
+        border-bottom: 2px solid $highlightC;
+        width: 47%;
+        color: $darkGroundCopyC;
+        text-align: left;
+        line-height: 4rem;
+        }
+    }
+    textarea {
+        background-color: $accentC;
+        color: $darkGroundCopyC;
+        border: 2px solid $highlightC;
+        width: 100%;
+        height: 200px;
+        margin: 35px 0;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+.contact {
+    aside {
+        margin: 7vw 0 0 9vw;
+        div {
+            ul {
+                li{
+                    color: $accentC;
+                    display: inline-block;
+                    margin: 0 20px 20px 0;
+                }
+            }
+        }
+        span {
+            display: block;
+        }
+        span:first-of-type {
+            margin-bottom: 25px;
+        } 
+    }
+}
+
+/****************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************/

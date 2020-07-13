@@ -1,0 +1,30 @@
+/****************************
+VARIABLES AND MIXINS
+****************************/
+
+/*Colors: C*/
+$backgroundC: #EAFEFC;
+$highlightC: #FDD908;
+$accentC: #0D457F;
+$darkGroundCopyC: white;
+
+/*Font Families: FF*/
+$headerFF:'IM Fell English', serif;
+$copyFF: 'Roboto', sans-serif;
+
+
+@mixin headerFont($color: $accentC) {
+    font-family: $headerFF;
+    font-style: italic;
+    color: $color;
+}
+
+@mixin button($bgColor: $highlightC, $color: $accentC) {
+    font-family: $headerFF;
+    font-style: italic;
+    background-color: $bgColor;
+    color: $color;
+    display: inline;
+    border: none;
+    padding: 7px 10px;
+}

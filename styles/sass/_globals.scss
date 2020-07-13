@@ -1,0 +1,25 @@
+/****************************
+GLOBALS
+****************************/
+.mainWrapper {
+    max-width: 1400px;
+    margin: auto;
+    background-color: $backgroundC;
+}
+html {
+    font-size: 62.5%;
+    font-weight: normal;
+}
+div img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    @include button;
+}
+/****************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************/
