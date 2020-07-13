@@ -82,6 +82,9 @@ VARIABLES AND MIXINS
 /*Colors: C*/
 /*Font Families: FF*/
 /****************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************/
+/****************************
 GLOBALS
 ****************************/
 .mainWrapper {
@@ -197,7 +200,7 @@ button, button a {
 }
 
 .commentContents span {
-  font-size: calc(0.25rem + 1vw);
+  font-size: calc(0.75rem + 1vw);
   font-family: "Roboto", sans-serif;
 }
 
@@ -668,6 +671,51 @@ header .headerImg h1 {
   color: #0D457F;
 }
 
+.formComment {
+  margin: 4vw;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+fieldset input {
+  background-color: #EAFEFC;
+  border: none;
+  border-bottom: 2px solid #FDD908;
+  width: 47%;
+  text-align: left;
+  line-height: 4rem;
+}
+
+textarea {
+  background-color: #EAFEFC;
+  border: 2px solid #FDD908;
+  width: 100%;
+  height: 200px;
+  margin: 35px 0;
+}
+
+button {
+  width: 100%;
+  font-family: "IM Fell English", serif;
+  font-style: italic;
+  background-color: #0D457F;
+  color: #FDD908;
+  display: inline;
+  border: none;
+  padding: 7px 10px;
+}
+
 .comment:first-of-type {
   margin-bottom: 4vw;
 }
@@ -755,40 +803,24 @@ header .headerImg h1 {
   margin: 4vw;
 }
 
-.contactFormContainer fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contactFormContainer fieldset input {
+.contactFormContainer input {
   background-color: #0D457F;
-  border: none;
-  border-bottom: 2px solid #FDD908;
-  width: 47%;
   color: white;
-  text-align: left;
-  line-height: 4rem;
 }
 
 .contactFormContainer textarea {
   background-color: #0D457F;
   color: white;
-  border: 2px solid #FDD908;
-  width: 100%;
-  height: 200px;
-  margin: 35px 0;
 }
 
 .contactFormContainer button {
-  width: 100%;
+  font-family: "IM Fell English", serif;
+  font-style: italic;
+  background-color: #FDD908;
+  color: #0D457F;
+  display: inline;
+  border: none;
+  padding: 7px 10px;
 }
 
 .contact aside {

@@ -60,9 +60,9 @@
                 </div>
             </section>
             <secttion class="commentSec">
-                <div class="postedComments">
+                <ul class="postedComments">
                     <h3>COMMENTS:</h3>
-                    <div class="comment">
+                    <li class="comment">
                         <div class="profileImg">
                             <img src="../assets/comment-1.jpg" alt="profile picture of commenter Ali">
                         </div>
@@ -73,8 +73,8 @@
                                 ultrices.
                                 Donec euismod scelerisque ligula. Maecenas eu varius risus...</p>
                         </div>
-                    </div>
-                    <div class="comment">
+                    </li>
+                    <li class="comment">
                         <div class="profileImg">
                             <img src="../assets/comment-2.jpg" alt="profile picture of commenter Lisa">
                         </div>
@@ -84,10 +84,15 @@
                                 nunc
                                 sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <div class="formComment">
-                    <button>POST COMMENT</button>
+                    <fieldset>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email address">
+                    </fieldset>
+                    <textarea name="specialInstructions" placeholder="Message"></textarea>
+                    <button type="submit">POST COMMENT</button>
                 </div>
             </secttion>
         </main>

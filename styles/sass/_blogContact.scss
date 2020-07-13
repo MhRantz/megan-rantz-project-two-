@@ -67,6 +67,36 @@ INITIAL BLOG AND CONTACT PAGE STYLE
     }
 }
 
+.formComment{
+    margin: 4vw;
+}  
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+input {
+    background-color: $backgroundC;
+    border: none;
+    border-bottom: 2px solid $highlightC;
+    width: 47%;
+    text-align: left;
+    line-height: 4rem;
+    }
+}
+textarea {
+    background-color: $backgroundC;
+    border: 2px solid $highlightC;
+    width: 100%;
+    height: 200px;
+    margin: 35px 0;
+}
+button {
+    width: 100%;
+    @include button($accentC, $highlightC);
+}
+
+
 .comment:first-of-type {
     margin-bottom: 4vw;
 }
@@ -141,31 +171,16 @@ INITIAL BLOG AND CONTACT PAGE STYLE
 
 .contactFormContainer{
     margin: 4vw;
-    
-    fieldset {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     input {
         background-color: $accentC;
-        border: none;
-        border-bottom: 2px solid $highlightC;
-        width: 47%;
         color: $darkGroundCopyC;
-        text-align: left;
-        line-height: 4rem;
         }
-    }
     textarea {
         background-color: $accentC;
         color: $darkGroundCopyC;
-        border: 2px solid $highlightC;
-        width: 100%;
-        height: 200px;
-        margin: 35px 0;
     }
     button {
-        width: 100%;
+        @include button($highlightC, $accentC);
     }
 }
 
