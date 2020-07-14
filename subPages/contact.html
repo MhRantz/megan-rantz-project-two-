@@ -26,7 +26,7 @@
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html" class="navActive">Contact</a></li>
+                        <li><a href="./contact.html" class=" navActive">Contact</a></li>
                     </ul>
                 </nav>
                 <h1 id="home">GET IN TOUCH</h1>
@@ -34,12 +34,16 @@
         </header>
         <main>
             <div class="contactFormContainer">
-                <fieldset>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email address">
-                </fieldset>
-                <textarea name="specialInstructions" placeholder="Message"></textarea>
-                <button type="submit">SUBMIT FORM</button>
+                <form action="">
+                    <fieldset>
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" placeholder="Name" id="email">
+                        <label for="email" class="visuallyHidden">Email address</label>
+                        <input type="email" placeholder="Email address" id="email">
+                    </fieldset>
+                    <textarea name="specialInstructions" name="comment" placeholder="Message"></textarea>
+                    <button type="submit">SUBMIT FORM</button>
+                </form>
             </div>
         </main>
         <aside>

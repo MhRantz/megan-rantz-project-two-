@@ -91,11 +91,11 @@ textarea {
     height: 200px;
     margin: 35px 0;
 }
-button {
-    width: 100%;
-    @include button($accentC, $highlightC);
-}
 
+.formComment button {
+    @include button($accentC, $highlightC);
+    width: 100%; 
+}
 
 .comment:first-of-type {
     margin-bottom: 4vw;
@@ -180,6 +180,7 @@ button {
         color: $darkGroundCopyC;
     }
     button {
+        width: 100%; 
         @include button($highlightC, $accentC);
     }
 }
@@ -202,6 +203,9 @@ button {
         span:first-of-type {
             margin-bottom: 25px;
         } 
+        i{
+            font-size: 1.75rem;
+        }
     }
 }
 

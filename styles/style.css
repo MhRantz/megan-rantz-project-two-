@@ -73,6 +73,19 @@ END RESET
   overflow: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 /****************************
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ****************************/
@@ -114,6 +127,7 @@ button {
   display: inline;
   border: none;
   padding: 7px 10px;
+  cursor: pointer;
 }
 
 /****************************
@@ -144,6 +158,10 @@ h2 {
   font-style: italic;
   color: #0D457F;
   margin-bottom: 2vw;
+}
+
+h2 a {
+  color: #0D457F;
 }
 
 h3 {
@@ -705,8 +723,7 @@ textarea {
   margin: 35px 0;
 }
 
-button {
-  width: 100%;
+.formComment button {
   font-family: "IM Fell English", serif;
   font-style: italic;
   background-color: #0D457F;
@@ -714,6 +731,8 @@ button {
   display: inline;
   border: none;
   padding: 7px 10px;
+  cursor: pointer;
+  width: 100%;
 }
 
 .comment:first-of-type {
@@ -814,6 +833,7 @@ button {
 }
 
 .contactFormContainer button {
+  width: 100%;
   font-family: "IM Fell English", serif;
   font-style: italic;
   background-color: #FDD908;
@@ -821,6 +841,7 @@ button {
   display: inline;
   border: none;
   padding: 7px 10px;
+  cursor: pointer;
 }
 
 .contact aside {
@@ -839,6 +860,10 @@ button {
 
 .contact aside span:first-of-type {
   margin-bottom: 25px;
+}
+
+.contact aside i {
+  font-size: 1.75rem;
 }
 
 /****************************
@@ -1062,6 +1087,9 @@ MOBILE AND TABLET BLOG AND CONTACT PAGE STYLE
     height: 200px;
     -webkit-box-shadow: 15px 15px #FDD908;
             box-shadow: 15px 15px #FDD908;
+  }
+  .blog i {
+    font-size: 2.5rem;
   }
 }
 
