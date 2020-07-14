@@ -30,6 +30,10 @@ $copyFF: 'Roboto', sans-serif;
     cursor: pointer;
 }
 
+@mixin backgroundImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /****************************
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ****************************/

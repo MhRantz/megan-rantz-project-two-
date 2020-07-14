@@ -20,9 +20,8 @@ INITIAL BLOG AND CONTACT PAGE STYLE
         height: 40vw;
         box-shadow: -15px 15px $highlightC;
         background-image: url(.././assets/blog-post-image.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: bottom right;
+        @include backgroundImage;
     }
     .blogContent{
         margin-left: -15px;
@@ -111,8 +110,7 @@ textarea {
             max-height: 377px;
             width: 74%;
             margin: -660px 0 0 0;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include backgroundImage;
         }
         .blogAside {
             background-color: $accentC;

@@ -13,7 +13,7 @@ MOBILE AND TABLET HEADER AND HOME PAGE STYLE
                 display: block;
                 height: 4px;
                 margin-bottom: 5px;
-                background-color: $darkGroundCopyC;
+                background-color: $backgroundC;
                 width: 40px;
                 border-radius: 5px;
             }
@@ -28,6 +28,11 @@ MOBILE AND TABLET HEADER AND HOME PAGE STYLE
     .leHamburger:hover span {
         background-color: $highlightC;
         transform: skew(45deg);
+    }
+
+    .leHamburger:active span {
+        background-color: $highlightC;
+        transform: skew(-45deg);
     }
 
     .headerContent {
